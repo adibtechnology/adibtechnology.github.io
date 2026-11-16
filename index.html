@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,577 +14,257 @@
 <title>ADIB TECHNOLOGY | Explore the Future</title>
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-
-body{
-  background:#050d19;
-  color:#edf6ff;
-  font-family:Arial,sans-serif;
-}
+body{background:#050d19;color:#edf6ff;font-family:Arial,sans-serif}
 
 /* HEADER */
-header{
-  background:#09182b;
-  padding:20px 7%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border-bottom:1px solid #123b5b;
-}
-
-.header-inner{
-  width:100%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:15px;
-}
-
-.logo{
-  font-size:23px;
-  font-weight:bold;
-  color:#00d9ff;
-}
-
-nav{
-  display:flex;
-  gap:20px;
-  flex-wrap:wrap;
-}
-
-nav a{
-  color:#d9eaff;
-  text-decoration:none;
-  font-size:14px;
-  transition:.3s;
-}
-
+header{background:#09182b;padding:20px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #123b5b}
+.header-inner{width:100%;display:flex;justify-content:space-between;align-items:center;gap:15px}
+.logo{font-size:23px;font-weight:bold;color:#00d9ff}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:#d9eaff;text-decoration:none;font-size:14px;transition:.3s}
 nav a:hover{color:#00d9ff}
 
 /* HERO */
-.hero{
-  min-height:480px;
-  padding:100px 8%;
-  background:
-  linear-gradient(90deg,#061326 15%,#061326bb 65%,#06132655),
-  url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600')
-  center/cover;
-  display:flex;
-  align-items:center;
-}
-
+.hero{min-height:480px;padding:100px 8%;background:linear-gradient(90deg,#061326 15%,#061326bb 65%,#06132655),url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600') center/cover;display:flex;align-items:center}
 .hero-content{max-width:650px}
-
-.hero h1{
-  font-size:clamp(38px,7vw,65px);
-  margin-bottom:15px;
-}
-
-.hero h1 span,
-.section-title span{color:#00d9ff}
-
-.hero h2{
-  color:#00d9ff;
-  margin-bottom:18px;
-  font-size:25px;
-}
-
-.hero p{
-  color:#c2d5e8;
-  line-height:1.8;
-  margin-bottom:25px;
-}
-
-.btn{
-  display:inline-block;
-  background:#00bfe9;
-  color:#00101c;
-  padding:14px 24px;
-  border-radius:7px;
-  text-decoration:none;
-  font-weight:bold;
-  transition:.3s;
-}
-
-.btn:hover{
-  background:#00d9ff;
-  transform:translateY(-3px);
-}
+.hero h1{font-size:clamp(38px,7vw,65px);margin-bottom:15px}
+.hero h1 span,.section-title span{color:#00d9ff}
+.hero h2{color:#00d9ff;margin-bottom:18px;font-size:25px}
+.hero p{color:#c2d5e8;line-height:1.8;margin-bottom:25px}
+.btn{display:inline-block;background:#00bfe9;color:#00101c;padding:14px 24px;border-radius:7px;text-decoration:none;font-weight:bold;transition:.3s}
+.btn:hover{background:#00d9ff;transform:translateY(-3px)}
 
 /* SECTIONS */
 section{padding:55px 7%}
-
-.section-title{
-  font-size:30px;
-  margin-bottom:25px;
-}
+.section-title{font-size:30px;margin-bottom:25px}
 
 /* CATEGORY AND ARTICLE CARDS */
-.categories,.articles{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:#0c1c30;
-  border:1px solid #173b5a;
-  border-radius:12px;
-  overflow:hidden;
-  transition:.3s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-  border-color:#00cfff;
-}
-
-.card img{
-  width:100%;
-  height:160px;
-  object-fit:cover;
-  display:block;
-}
-
+.categories,.articles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#0c1c30;border:1px solid #173b5a;border-radius:12px;overflow:hidden;transition:.3s}
+.card:hover{transform:translateY(-5px);border-color:#00cfff}
+.card img{width:100%;height:160px;object-fit:cover;display:block}
 .card-content{padding:20px}
-
-.card h3{
-  margin-bottom:12px;
-  color:#00d9ff;
-}
-
-.card p{
-  color:#c0d0e0;
-  line-height:1.6;
-  font-size:14px;
-}
-
-.card a{
-  display:inline-block;
-  margin-top:15px;
-  color:#00d9ff;
-  text-decoration:none;
-}
-
+.card h3{margin-bottom:12px;color:#00d9ff}
+.card p{color:#c0d0e0;line-height:1.6;font-size:14px}
+.card a{display:inline-block;margin-top:15px;color:#00d9ff;text-decoration:none}
 .card a:hover{text-decoration:underline}
 
 /* SEARCH */
-.search{
-  width:100%;
-  max-width:450px;
-  padding:13px;
-  background:#0c1c30;
-  border:1px solid #245071;
-  color:white;
-  border-radius:7px;
-  margin-bottom:25px;
-  outline:none;
-}
-
+.search{width:100%;max-width:450px;padding:13px;background:#0c1c30;border:1px solid #245071;color:white;border-radius:7px;margin-bottom:25px;outline:none}
 .search:focus{border-color:#00d9ff}
 
 /* ABOUT */
-.about{
-  background:#0a192b;
-  text-align:center;
-  border-top:1px solid #173b5a;
-  border-bottom:1px solid #173b5a;
-}
-
-.about p{
-  max-width:750px;
-  margin:auto;
-  line-height:1.9;
-  color:#c4d5e5;
-}
+.about{background:#0a192b;text-align:center;border-top:1px solid #173b5a;border-bottom:1px solid #173b5a}
+.about p{max-width:750px;margin:auto;line-height:1.9;color:#c4d5e5}
 
 /* CREATOR */
-.creator{
-  background:
-  radial-gradient(circle at top,#102c48 0%,#050d19 65%);
-  text-align:center;
-  border-bottom:1px solid #173b5a;
-}
-
-.creator-card{
-  max-width:850px;
-  margin:auto;
-  padding:35px 30px;
-  background:#0c1c30;
-  border:1px solid #164c70;
-  border-radius:20px;
-  box-shadow:0 0 35px #00cfff12;
-}
-
-.creator-image{
-  width:190px;
-  height:190px;
-  object-fit:cover;
-  object-position:center;
-  border-radius:50%;
-  border:4px solid #00d9ff;
-  box-shadow:0 0 25px #00d9ff66;
-  margin-bottom:22px;
-}
-
-.creator-label{
-  color:#00d9ff;
-  font-size:14px;
-  letter-spacing:3px;
-  text-transform:uppercase;
-  margin-bottom:12px;
-}
-
-.creator-name{
-  font-size:clamp(25px,5vw,36px);
-  margin-bottom:10px;
-  color:#ffffff;
-}
-
-.creator-role{
-  color:#00d9ff;
-  font-size:16px;
-  margin-bottom:22px;
-}
-
-.creator-bio{
-  max-width:700px;
-  margin:auto;
-  color:#c4d5e5;
-  line-height:1.9;
-  font-size:15px;
-  text-align:left;
-}
-
-.creator-tags{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:25px;
-}
-
-.creator-tags span{
-  background:#102c45;
-  border:1px solid #176080;
-  color:#00d9ff;
-  padding:9px 15px;
-  border-radius:25px;
-  font-size:13px;
-}
-
-.creator-quote{
-  margin-top:28px;
-  color:#00d9ff;
-  font-style:italic;
-  font-size:16px;
-  line-height:1.7;
-}
+.creator{background:radial-gradient(circle at top,#102c48 0%,#050d19 65%);text-align:center;border-bottom:1px solid #173b5a}
+.creator-card{max-width:850px;margin:auto;padding:35px 30px;background:#0c1c30;border:1px solid #164c70;border-radius:20px;box-shadow:0 0 35px #00cfff12}
+.creator-image{width:190px;height:190px;object-fit:cover;object-position:center;border-radius:50%;border:4px solid #00d9ff;box-shadow:0 0 25px #00d9ff66;margin-bottom:22px}
+.creator-label{color:#00d9ff;font-size:14px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.creator-name{font-size:clamp(25px,5vw,36px);margin-bottom:10px;color:#ffffff}
+.creator-role{color:#00d9ff;font-size:16px;margin-bottom:22px}
+.creator-bio{max-width:700px;margin:auto;color:#c4d5e5;line-height:1.9;font-size:15px;text-align:left}
+.creator-tags{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:25px}
+.creator-tags span{background:#102c45;border:1px solid #176080;color:#00d9ff;padding:9px 15px;border-radius:25px;font-size:13px}
+.creator-quote{margin-top:28px;color:#00d9ff;font-style:italic;font-size:16px;line-height:1.7}
 
 /* FOOTER */
-footer{
-  padding:30px;
-  text-align:center;
-  color:#94a9bc;
-  font-size:13px;
-}
-
+footer{padding:30px;text-align:center;color:#94a9bc;font-size:13px}
 footer p{margin-top:5px}
 
 /* MOBILE ONLY */
 @media(max-width:700px){
-
-  header{padding:12px 3%}
-
-  .header-inner{
-    flex-direction:column;
-    gap:9px;
-  }
-
-  .logo{font-size:19px}
-
-  nav{
-    width:100%;
-    flex-wrap:nowrap;
-    overflow-x:auto;
-    justify-content:flex-start;
-    gap:19px;
-    padding:4px 2px;
-  }
-
-  nav a{
-    font-size:13px;
-    white-space:nowrap;
-  }
-
-  .hero{
-    min-height:330px;
-    padding:55px 6%;
-  }
-
-  .hero h1{
-    font-size:clamp(32px,8vw,42px);
-  }
-
-  .hero h2{font-size:20px}
-
-  .hero p{
-    font-size:14px;
-    line-height:1.7;
-  }
-
-  section{padding:30px 4%}
-
-  .section-title{
-    font-size:24px;
-    margin-bottom:17px;
-  }
-
-  .categories,.articles{
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:11px;
-  }
-
-  .card img{height:120px}
-
-  .card-content{padding:11px}
-
-  .card h3{
-    font-size:15px;
-    margin-bottom:7px;
-  }
-
-  .card p{
-    font-size:12px;
-    line-height:1.5;
-  }
-
-  .card a{
-    font-size:12px;
-    margin-top:9px;
-  }
-
-  .creator-card{padding:22px 15px}
-
-  .creator-image{
-    width:125px;
-    height:125px;
-  }
-
-  .creator-label{font-size:11px}
-  .creator-role{font-size:13px}
-
-  .creator-bio{
-    font-size:13px;
-    line-height:1.7;
-  }
-
-  .creator-tags{gap:7px}
-
-  .creator-tags span{
-    font-size:11px;
-    padding:6px 9px;
-  }
-
-  .creator-quote{font-size:13px}
+header{padding:12px 3%}
+.header-inner{flex-direction:column;gap:9px}
+.logo{font-size:19px}
+nav{width:100%;flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;gap:19px;padding:4px 2px}
+nav a{font-size:13px;white-space:nowrap}
+.hero{min-height:330px;padding:55px 6%}
+.hero h1{font-size:clamp(32px,8vw,42px)}
+.hero h2{font-size:20px}
+.hero p{font-size:14px;line-height:1.7}
+section{padding:30px 4%}
+.section-title{font-size:24px;margin-bottom:17px}
+.categories,.articles{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.card img{height:120px}
+.card-content{padding:11px}
+.card h3{font-size:15px;margin-bottom:7px}
+.card p{font-size:12px;line-height:1.5}
+.card a{font-size:12px;margin-top:9px}
+.creator-card{padding:22px 15px}
+.creator-image{width:125px;height:125px}
+.creator-label{font-size:11px}
+.creator-role{font-size:13px}
+.creator-bio{font-size:13px;line-height:1.7}
+.creator-tags{gap:7px}
+.creator-tags span{font-size:11px;padding:6px 9px}
+.creator-quote{font-size:13px}
 }
 
 /* VERY SMALL PHONES */
 @media(max-width:380px){
-
-  .categories,.articles{
-    grid-template-columns:1fr;
-  }
-
-  .card img{height:155px}
+.categories,.articles{grid-template-columns:1fr}
+.card img{height:155px}
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-  <div class="header-inner">
-    <div class="logo">ADIB TECHNOLOGY</div>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#science">Science</a>
-      <a href="#technology">Technology</a>
-      <a href="#ai">AI</a>
-      <a href="#space">Space</a>
-      <a href="#about">About</a>
-    </nav>
-  </div>
+<div class="header-inner">
+<div class="logo">ADIB TECHNOLOGY</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#science">Science</a>
+<a href="#technology">Technology</a>
+<a href="#ai">AI</a>
+<a href="#space">Space</a>
+<a href="#about">About</a>
+</nav>
+</div>
 </header>
 
-<!-- HERO -->
 <div class="hero" id="home">
-  <div class="hero-content">
-    <h1>ADIB <span>TECHNOLOGY</span></h1>
-    <h2>Explore. Discover. Innovate.</h2>
-    <p>
-      Explore the mysteries of science, artificial intelligence,
-      space, the universe and future technology.
-      Knowledge begins with curiosity.
-    </p>
-    <a href="#science" class="btn">Explore Now</a>
-  </div>
+<div class="hero-content">
+<h1>ADIB <span>TECHNOLOGY</span></h1>
+<h2>Explore. Discover. Innovate.</h2>
+<p>Explore the mysteries of science, artificial intelligence, space, the universe and future technology. Knowledge begins with curiosity.</p>
+<a href="#science" class="btn">Explore Now</a>
+</div>
 </div>
 
-<!-- EXPLORE -->
 <section id="science">
-  <h2 class="section-title">Explore Our <span>World</span></h2>
+<h2 class="section-title">Explore Our <span>World</span></h2>
+<div class="categories">
 
-  <div class="categories">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=700" alt="Science laboratory">
+<div class="card-content">
+<h3>Science</h3>
+<p>Discover scientific ideas, experiments, discoveries and the laws of nature.</p>
+</div>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=700" alt="Science laboratory">
-      <div class="card-content">
-        <h3>Science</h3>
-        <p>Discover scientific ideas, experiments, discoveries and the laws of nature.</p>
-      </div>
-    </div>
+<div class="card" id="technology">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=700" alt="Technology circuit">
+<div class="card-content">
+<h3>Technology</h3>
+<p>Explore modern technology, electronics, computers and future inventions.</p>
+</div>
+</div>
 
-    <div class="card" id="technology">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=700" alt="Technology circuit">
-      <div class="card-content">
-        <h3>Technology</h3>
-        <p>Explore modern technology, electronics, computers and future inventions.</p>
-      </div>
-    </div>
+<div class="card" id="ai">
+<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700" alt="Artificial intelligence">
+<div class="card-content">
+<h3>Artificial Intelligence</h3>
+<p>Learn about AI, machine learning, robotics and intelligent systems.</p>
+</div>
+</div>
 
-    <div class="card" id="ai">
-      <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700" alt="Artificial intelligence">
-      <div class="card-content">
-        <h3>Artificial Intelligence</h3>
-        <p>Learn about AI, machine learning, robotics and intelligent systems.</p>
-      </div>
-    </div>
+<div class="card" id="space">
+<img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=700" alt="Earth from space">
+<div class="card-content">
+<h3>Space & Universe</h3>
+<p>Explore galaxies, planets, black holes and the mysteries of our universe.</p>
+</div>
+</div>
 
-    <div class="card" id="space">
-      <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=700" alt="Earth from space">
-      <div class="card-content">
-        <h3>Space & Universe</h3>
-        <p>Explore galaxies, planets, black holes and the mysteries of our universe.</p>
-      </div>
-    </div>
-
-  </div>
+</div>
 </section>
 
-<!-- LATEST DISCOVERIES -->
 <section id="discoveries">
-  <h2 class="section-title">Latest <span>Discoveries</span></h2>
+<h2 class="section-title">Latest <span>Discoveries</span></h2>
 
-  <input
-    type="text"
-    class="search"
-    id="articleSearch"
-    placeholder="Search discoveries..."
-    aria-label="Search discoveries"
-  >
+<input type="text" class="search" id="articleSearch" placeholder="Search discoveries..." aria-label="Search discoveries">
 
-  <div class="articles" id="articleList">
+<div class="articles" id="articleList">
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=700" alt="Light and reflection">
-      <div class="card-content">
-        <h3>How Does Light Reflection Work?</h3>
-        <p>Discover how light reflects from objects and mirrors, and how we see the world around us.</p>
-        <a href="light-reflection.html">Read Article →</a>
-      </div>
-    </div>
+<div class="card">
+<img src="light-reflection-cover.png" alt="Light reflection from a mirror">
+<div class="card-content">
+<h3>How Does Light Reflection Work?</h3>
+<p>Discover how light reflects from objects and mirrors, and how we see the world around us.</p>
+<a href="light-reflection.html">Read Article →</a>
+</div>
+</div>
 
-  </div>
+</div>
 </section>
 
-<!-- ABOUT -->
 <section class="about" id="about">
-  <h2 class="section-title">About <span>ADIB TECHNOLOGY</span></h2>
-  <p>
-    ADIB TECHNOLOGY is a knowledge-sharing platform created to explore
-    science, technology, artificial intelligence, space and the universe.
-    Our goal is to stay curious, ask questions and discover new ideas.
-    Dream Big. Explore More. Discover the Unknown.
-  </p>
+<h2 class="section-title">About <span>ADIB TECHNOLOGY</span></h2>
+<p>
+ADIB TECHNOLOGY is a knowledge-sharing platform created to explore
+science, technology, artificial intelligence, space and the universe.
+Our goal is to stay curious, ask questions and discover new ideas.
+Dream Big. Explore More. Discover the Unknown.
+</p>
 </section>
 
-<!-- CREATOR PROFILE -->
 <section class="creator">
-  <h2 class="section-title">Meet the <span>Creator</span></h2>
+<h2 class="section-title">Meet the <span>Creator</span></h2>
 
-  <div class="creator-card">
+<div class="creator-card">
+<img
+src="654721252_18062361740416759_7270818964428870442_n.jpg"
+alt="Creator of ADIB TECHNOLOGY"
+class="creator-image"
+>
 
-    <img
-      src="654721252_18062361740416759_7270818964428870442_n.jpg"
-      alt="Creator of ADIB TECHNOLOGY"
-      class="creator-image"
-    >
+<div class="creator-label">Founder & Creator</div>
+<h2 class="creator-name">Md Abran Hasan Adib</h2>
+<p class="creator-role">Founder & Creator of ADIB TECHNOLOGY</p>
 
-    <div class="creator-label">Founder & Creator</div>
+<p class="creator-bio">
+Hello! I am a student who loves exploring science, space,
+the universe, artificial intelligence and future technology.
+I enjoy asking questions, learning new things and understanding
+how the world works. My dream is to become a scientist and
+discover things that can help people and make the future better.
+I created ADIB TECHNOLOGY to share knowledge and explore the
+unknown with curious minds.
+</p>
 
-    <h2 class="creator-name">Md Abran Hasan Adib</h2>
+<div class="creator-tags">
+<span>Science</span>
+<span>Space & Universe</span>
+<span>Artificial Intelligence</span>
+<span>Future Inventions</span>
+<span>Space Research</span>
+</div>
 
-    <p class="creator-role">Founder & Creator of ADIB TECHNOLOGY</p>
-
-    <p class="creator-bio">
-      Hello! I am a student who loves exploring science, space,
-      the universe, artificial intelligence and future technology.
-      I enjoy asking questions, learning new things and understanding
-      how the world works. My dream is to become a scientist and
-      discover things that can help people and make the future better.
-      I created ADIB TECHNOLOGY to share knowledge and explore the
-      unknown with curious minds.
-    </p>
-
-    <div class="creator-tags">
-      <span>Science</span>
-      <span>Space & Universe</span>
-      <span>Artificial Intelligence</span>
-      <span>Future Inventions</span>
-      <span>Space Research</span>
-    </div>
-
-    <p class="creator-quote">
-      “Stay curious. Keep questioning. The future begins with discovery.”
-    </p>
-
-  </div>
+<p class="creator-quote">“Stay curious. Keep questioning. The future begins with discovery.”</p>
+</div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 ADIB TECHNOLOGY. All Rights Reserved.</p>
-  <p>Dream Big. Explore More. Discover the Unknown.</p>
+<p>© 2026 ADIB TECHNOLOGY. All Rights Reserved.</p>
+<p>Dream Big. Explore More. Discover the Unknown.</p>
 </footer>
 
-<!-- SEARCH SCRIPT -->
 <script>
 const searchInput = document.getElementById("articleSearch");
 const articleCards = document.querySelectorAll("#articleList .card");
 
 searchInput.addEventListener("input", function(){
-  const searchText = this.value.toLowerCase();
+const searchText = this.value.toLowerCase();
 
-  articleCards.forEach(function(card){
-    const cardText = card.innerText.toLowerCase();
+articleCards.forEach(function(card){
+const cardText = card.innerText.toLowerCase();
 
-    if(cardText.includes(searchText)){
-      card.style.display = "";
-    }else{
-      card.style.display = "none";
-    }
-  });
+if(cardText.includes(searchText)){
+card.style.display = "";
+}else{
+card.style.display = "none";
+}
+});
 });
 </script>
 
 </body>
 </html>
+```
