@@ -65,6 +65,7 @@ section{padding:65px 7%}
 .card h3{margin-bottom:12px;color:#00d9ff}
 .card p{color:#c0d0e0;line-height:1.6;font-size:14px}
 .card a{display:inline-block;margin-top:15px;color:#00d9ff;text-decoration:none}
+.card a:hover{text-decoration:underline}
 .about{
   background:#0a192b;text-align:center;
   border-top:1px solid #173b5a;
@@ -165,6 +166,24 @@ footer{padding:30px;text-align:center;color:#94a9bc;font-size:13px}
 
   <div class="articles" id="article-list">
 
+    <!-- NEW SCIENCE ARTICLE -->
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=700"
+      alt="Light Reflection Science">
+
+      <div class="card-content">
+        <h3>How Does Light Reflection Work?</h3>
+        <p>
+          Discover how light reflects through mirrors
+          with a real-life observation of a mirror and a drum.
+        </p>
+        <a href="light-reflection.html">Read Article →</a>
+      </div>
+    </div>
+
+    <!-- EXISTING ARTICLES -->
+
     <div class="card">
       <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=700" alt="Universe">
       <div class="card-content">
@@ -222,6 +241,7 @@ footer{padding:30px;text-align:center;color:#94a9bc;font-size:13px}
 <script>
 function searchArticles(){
   const query=document.getElementById("search").value.toLowerCase();
+
   document.querySelectorAll("#article-list .card").forEach(card=>{
     card.style.display=card.innerText.toLowerCase().includes(query)
       ? "block":"none";
