@@ -16,72 +16,281 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
+
 body{
-  background:#050d19;color:#edf6ff;
+  background:#050d19;
+  color:#edf6ff;
   font-family:Arial,sans-serif;
 }
+
 header{
-  background:#09182b;padding:20px 7%;
-  display:flex;justify-content:space-between;
-  align-items:center;flex-wrap:wrap;gap:15px;
+  background:#09182b;
+  padding:20px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:15px;
   border-bottom:1px solid #123b5b;
 }
-.logo{font-size:23px;font-weight:bold;color:#00d9ff}
-nav{display:flex;gap:20px;flex-wrap:wrap}
-nav a{color:#d9eaff;text-decoration:none;font-size:14px}
+
+.logo{
+  font-size:23px;
+  font-weight:bold;
+  color:#00d9ff;
+}
+
+nav{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+nav a{
+  color:#d9eaff;
+  text-decoration:none;
+  font-size:14px;
+}
+
 nav a:hover{color:#00d9ff}
+
 .hero{
-  min-height:480px;padding:100px 8%;
-  background:linear-gradient(90deg,#061326 15%,#061326bb 65%,#06132655),
+  min-height:480px;
+  padding:100px 8%;
+  background:
+  linear-gradient(90deg,#061326 15%,#061326bb 65%,#06132655),
   url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600')
   center/cover;
-  display:flex;align-items:center;
+  display:flex;
+  align-items:center;
 }
+
 .hero-content{max-width:650px}
-.hero h1{font-size:clamp(38px,7vw,65px);margin-bottom:15px}
-.hero h1 span{color:#00d9ff}
-.hero h2{color:#00d9ff;margin-bottom:18px;font-size:25px}
-.hero p{color:#c2d5e8;line-height:1.8;margin-bottom:25px}
-.btn{
-  display:inline-block;background:#00bfe9;color:#00101c;
-  padding:14px 24px;border-radius:7px;
-  text-decoration:none;font-weight:bold;
+
+.hero h1{
+  font-size:clamp(38px,7vw,65px);
+  margin-bottom:15px;
 }
+
+.hero h1 span{color:#00d9ff}
+
+.hero h2{
+  color:#00d9ff;
+  margin-bottom:18px;
+  font-size:25px;
+}
+
+.hero p{
+  color:#c2d5e8;
+  line-height:1.8;
+  margin-bottom:25px;
+}
+
+.btn{
+  display:inline-block;
+  background:#00bfe9;
+  color:#00101c;
+  padding:14px 24px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
 section{padding:65px 7%}
-.section-title{font-size:30px;margin-bottom:30px}
+
+.section-title{
+  font-size:30px;
+  margin-bottom:30px;
+}
+
 .section-title span{color:#00d9ff}
+
 .categories,.articles{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:20px;
 }
+
 .card{
-  background:#0c1c30;border:1px solid #173b5a;
-  border-radius:12px;overflow:hidden;transition:.3s;
+  background:#0c1c30;
+  border:1px solid #173b5a;
+  border-radius:12px;
+  overflow:hidden;
+  transition:.3s;
 }
-.card:hover{transform:translateY(-5px);border-color:#00cfff}
-.card img{width:100%;height:160px;object-fit:cover}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#00cfff;
+}
+
+.card img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+}
+
 .card-content{padding:20px}
-.card h3{margin-bottom:12px;color:#00d9ff}
-.card p{color:#c0d0e0;line-height:1.6;font-size:14px}
-.card a{display:inline-block;margin-top:15px;color:#00d9ff;text-decoration:none}
+
+.card h3{
+  margin-bottom:12px;
+  color:#00d9ff;
+}
+
+.card p{
+  color:#c0d0e0;
+  line-height:1.6;
+  font-size:14px;
+}
+
+.card a{
+  display:inline-block;
+  margin-top:15px;
+  color:#00d9ff;
+  text-decoration:none;
+}
+
 .card a:hover{text-decoration:underline}
+
 .about{
-  background:#0a192b;text-align:center;
+  background:#0a192b;
+  text-align:center;
   border-top:1px solid #173b5a;
   border-bottom:1px solid #173b5a;
 }
-.about p{max-width:750px;margin:auto;line-height:1.9;color:#c4d5e5}
-footer{padding:30px;text-align:center;color:#94a9bc;font-size:13px}
-.search{
-  width:100%;max-width:450px;padding:13px;
-  background:#0c1c30;border:1px solid #245071;
-  color:white;border-radius:7px;margin-bottom:25px;
+
+.about p{
+  max-width:750px;
+  margin:auto;
+  line-height:1.9;
+  color:#c4d5e5;
 }
+
+/* CREATOR PROFILE */
+
+.creator{
+  background:
+  radial-gradient(circle at top,#102c48 0%,#050d19 65%);
+  text-align:center;
+  border-bottom:1px solid #173b5a;
+}
+
+.creator-card{
+  max-width:850px;
+  margin:auto;
+  padding:40px 30px;
+  background:#0c1c30;
+  border:1px solid #164c70;
+  border-radius:20px;
+  box-shadow:0 0 35px #00cfff12;
+  animation:fadeUp 1s ease;
+}
+
+.creator-image{
+  width:190px;
+  height:190px;
+  object-fit:cover;
+  object-position:center;
+  border-radius:50%;
+  border:4px solid #00d9ff;
+  box-shadow:0 0 25px #00d9ff66;
+  margin-bottom:22px;
+  transition:.4s;
+}
+
+.creator-image:hover{
+  transform:scale(1.06);
+  box-shadow:0 0 40px #00d9ffaa;
+}
+
+.creator-label{
+  color:#00d9ff;
+  font-size:14px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+
+.creator-name{
+  font-size:clamp(25px,5vw,36px);
+  margin-bottom:10px;
+  color:#ffffff;
+}
+
+.creator-role{
+  color:#00d9ff;
+  font-size:16px;
+  margin-bottom:22px;
+}
+
+.creator-bio{
+  max-width:700px;
+  margin:auto;
+  color:#c4d5e5;
+  line-height:1.9;
+  font-size:15px;
+}
+
+.creator-tags{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:25px;
+}
+
+.creator-tags span{
+  background:#102c45;
+  border:1px solid #176080;
+  color:#00d9ff;
+  padding:9px 15px;
+  border-radius:25px;
+  font-size:13px;
+}
+
+.creator-quote{
+  margin-top:28px;
+  color:#00d9ff;
+  font-style:italic;
+  font-size:16px;
+  line-height:1.7;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(25px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+footer{
+  padding:30px;
+  text-align:center;
+  color:#94a9bc;
+  font-size:13px;
+}
+
+.search{
+  width:100%;
+  max-width:450px;
+  padding:13px;
+  background:#0c1c30;
+  border:1px solid #245071;
+  color:white;
+  border-radius:7px;
+  margin-bottom:25px;
+}
+
 @media(max-width:600px){
   header{justify-content:center}
   nav{justify-content:center}
   .hero{padding:75px 7%;min-height:400px}
+  .creator-card{padding:30px 18px}
+  .creator-image{width:155px;height:155px}
 }
 </style>
 </head>
@@ -90,6 +299,7 @@ footer{padding:30px;text-align:center;color:#94a9bc;font-size:13px}
 
 <header>
   <div class="logo">✦ ADIB TECHNOLOGY</div>
+
   <nav>
     <a href="#home">Home</a>
     <a href="#science">Science</a>
@@ -106,17 +316,20 @@ footer{padding:30px;text-align:center;color:#94a9bc;font-size:13px}
   <div class="hero-content">
     <h1>ADIB <span>TECHNOLOGY</span></h1>
     <h2>Explore. Discover. Innovate.</h2>
+
     <p>
       Welcome to ADIB TECHNOLOGY — Explore the wonders
       of science, artificial intelligence, space and
       the future of technology.
     </p>
+
     <a href="#explore" class="btn">Explore Now →</a>
   </div>
 </section>
 
 <section id="explore">
   <h2 class="section-title">Explore <span>Our World</span></h2>
+
   <div class="categories">
 
     <div class="card" id="science">
@@ -161,16 +374,18 @@ footer{padding:30px;text-align:center;color:#94a9bc;font-size:13px}
 <section id="articles">
   <h2 class="section-title">Latest <span>Discoveries</span></h2>
 
-  <input class="search" id="search" type="search"
-  placeholder="Search articles..." oninput="searchArticles()">
+  <input
+    class="search"
+    id="search"
+    type="search"
+    placeholder="Search articles..."
+    oninput="searchArticles()"
+  >
 
   <div class="articles" id="article-list">
 
-    <!-- NEW SCIENCE ARTICLE -->
-
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=700"
-      alt="Light Reflection Science">
+      <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=700" alt="Light Reflection Science">
 
       <div class="card-content">
         <h3>How Does Light Reflection Work?</h3>
@@ -181,8 +396,6 @@ footer{padding:30px;text-align:center;color:#94a9bc;font-size:13px}
         <a href="light-reflection.html">Read Article →</a>
       </div>
     </div>
-
-    <!-- EXISTING ARTICLES -->
 
     <div class="card">
       <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=700" alt="Universe">
@@ -221,14 +434,76 @@ footer{padding:30px;text-align:center;color:#94a9bc;font-size:13px}
 
 <section class="about" id="about">
   <h2 class="section-title">About <span>ADIB TECHNOLOGY</span></h2>
+
   <p>
     ADIB TECHNOLOGY is a platform dedicated to science,
     technology, artificial intelligence and space.
     Our mission is to explore knowledge, inspire curiosity
     and discover the future.
   </p>
+
   <br>
+
   <h3 style="color:#00d9ff">Dream Big. Explore More.</h3>
+</section>
+
+<!-- ABOUT THE CREATOR -->
+
+<section class="creator" id="creator">
+
+  <h2 class="section-title">Meet <span>the Creator</span></h2>
+
+  <div class="creator-card">
+
+    <img
+      class="creator-image"
+      src="654721252_18062361740416759_7270818964428870442_n.jpg"
+      alt="Portrait of Md Abran Hasan Adib, founder of ADIB TECHNOLOGY"
+    >
+
+    <p class="creator-label">Founder & Creator</p>
+
+    <h2 class="creator-name">Md Abran Hasan Adib</h2>
+
+    <p class="creator-role">
+      Founder & Creator of ADIB TECHNOLOGY
+    </p>
+
+    <p class="creator-bio">
+      I am Adib, a student with a deep curiosity about science,
+      space, the universe, artificial intelligence and future
+      technology. I dream of becoming a scientist and contributing
+      to discoveries that help us understand the world around us.
+      <br><br>
+
+      I love asking scientific questions, learning how and why
+      things happen, and exploring big ideas—from space research
+      and NASA missions to the mysteries of the universe and the
+      possibility of a multiverse. For me, learning is not just
+      about memorizing facts; it is about understanding,
+      questioning and thinking creatively.
+      <br><br>
+
+      I created ADIB TECHNOLOGY to share knowledge, interesting
+      ideas and discoveries in science, technology, AI and space.
+      This is my small step toward a future built on curiosity,
+      creativity and innovation.
+    </p>
+
+    <div class="creator-tags">
+      <span>🔬 Science</span>
+      <span>🌌 Space & Universe</span>
+      <span>🤖 Artificial Intelligence</span>
+      <span>💡 Future Inventions</span>
+      <span>🛰️ Space Research</span>
+    </div>
+
+    <p class="creator-quote">
+      "Stay curious. Keep questioning.
+      The future begins with discovery."
+    </p>
+
+  </div>
 </section>
 
 </main>
