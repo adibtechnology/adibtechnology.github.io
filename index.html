@@ -204,6 +204,15 @@ section {
     border-color: #00d9ff;
 }
 
+/* LIGHT REFLECTION COVER IMAGE */
+#articleList .card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #050d19;
+}
+
 /* ABOUT */
 .about {
     background: #0a192b;
@@ -267,9 +276,11 @@ section {
     margin-bottom: 22px;
 }
 
+/* CREATOR BIO */
 .creator-bio {
+    display: block;
     max-width: 700px;
-    margin: auto;
+    margin: 0 auto;
     color: #c4d5e5;
     line-height: 1.9;
     font-size: 15px;
@@ -277,13 +288,17 @@ section {
 }
 
 .creator-bio p {
-    margin-bottom: 16px;
+    display: block;
+    margin: 0 0 22px 0;
+    padding: 0;
+    line-height: 1.9;
 }
 
 .creator-bio p:last-child {
     margin-bottom: 0;
 }
 
+/* CREATOR TAGS */
 .creator-tags {
     display: flex;
     justify-content: center;
@@ -323,6 +338,7 @@ footer p {
 
 /* MOBILE ONLY */
 @media (max-width: 700px) {
+
     header {
         padding: 12px 3%;
     }
@@ -387,6 +403,13 @@ footer p {
         height: 120px;
     }
 
+    /* KEEP FULL ARTICLE COVER ON MOBILE */
+    #articleList .card img {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: contain;
+    }
+
     .card-content {
         padding: 11px;
     }
@@ -425,11 +448,12 @@ footer p {
 
     .creator-bio {
         font-size: 13px;
-        line-height: 1.7;
+        line-height: 1.8;
     }
 
     .creator-bio p {
-        margin-bottom: 13px;
+        margin-bottom: 17px;
+        line-height: 1.8;
     }
 
     .creator-tags {
@@ -448,6 +472,7 @@ footer p {
 
 /* VERY SMALL PHONES */
 @media (max-width: 380px) {
+
     .categories,
     .articles {
         grid-template-columns: 1fr;
@@ -455,6 +480,12 @@ footer p {
 
     .card img {
         height: 155px;
+    }
+
+    #articleList .card img {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: contain;
     }
 }
 </style>
@@ -465,6 +496,7 @@ footer p {
 <!-- HEADER -->
 <header>
     <div class="header-inner">
+
         <div class="logo">ADIB TECHNOLOGY</div>
 
         <nav>
@@ -475,13 +507,17 @@ footer p {
             <a href="#space">Space</a>
             <a href="#about">About</a>
         </nav>
+
     </div>
 </header>
 
 <!-- HERO -->
 <div class="hero" id="home">
+
     <div class="hero-content">
+
         <h1>ADIB <span>TECHNOLOGY</span></h1>
+
         <h2>Explore. Discover. Innovate.</h2>
 
         <p>
@@ -490,64 +526,105 @@ footer p {
         </p>
 
         <a href="#science" class="btn">Explore Now</a>
+
     </div>
+
 </div>
 
 <!-- EXPLORE OUR WORLD -->
 <section id="science">
+
     <h2 class="section-title">Explore Our <span>World</span></h2>
 
     <div class="categories">
 
         <div class="card">
+
             <img
                 src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=700"
                 alt="Science laboratory"
             >
+
             <div class="card-content">
+
                 <h3>Science</h3>
-                <p>Discover scientific ideas, experiments, discoveries and the laws of nature.</p>
+
+                <p>
+                    Discover scientific ideas, experiments,
+                    discoveries and the laws of nature.
+                </p>
+
             </div>
+
         </div>
 
         <div class="card" id="technology">
+
             <img
                 src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=700"
                 alt="Technology circuit"
             >
+
             <div class="card-content">
+
                 <h3>Technology</h3>
-                <p>Explore modern technology, electronics, computers and future inventions.</p>
+
+                <p>
+                    Explore modern technology, electronics,
+                    computers and future inventions.
+                </p>
+
             </div>
+
         </div>
 
         <div class="card" id="ai">
+
             <img
                 src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700"
                 alt="Artificial intelligence"
             >
+
             <div class="card-content">
+
                 <h3>Artificial Intelligence</h3>
-                <p>Learn about AI, machine learning, robotics and intelligent systems.</p>
+
+                <p>
+                    Learn about AI, machine learning,
+                    robotics and intelligent systems.
+                </p>
+
             </div>
+
         </div>
 
         <div class="card" id="space">
+
             <img
                 src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=700"
                 alt="Earth from space"
             >
+
             <div class="card-content">
+
                 <h3>Space & Universe</h3>
-                <p>Explore galaxies, planets, black holes and the mysteries of our universe.</p>
+
+                <p>
+                    Explore galaxies, planets, black holes
+                    and the mysteries of our universe.
+                </p>
+
             </div>
+
         </div>
 
     </div>
+
 </section>
 
 <!-- LATEST DISCOVERIES -->
 <section id="discoveries">
+
     <h2 class="section-title">Latest <span>Discoveries</span></h2>
 
     <input
@@ -561,26 +638,34 @@ footer p {
     <div class="articles" id="articleList">
 
         <div class="card">
+
             <img
                 src="light-reflection-cover.png"
                 alt="Light reflection from a mirror"
             >
 
             <div class="card-content">
+
                 <h3>How Does Light Reflection Work?</h3>
+
                 <p>
                     Discover how light reflects from objects and mirrors,
                     and how we see the world around us.
                 </p>
+
                 <a href="light-reflection.html">Read Article →</a>
+
             </div>
+
         </div>
 
     </div>
+
 </section>
 
 <!-- ABOUT -->
 <section class="about" id="about">
+
     <h2 class="section-title">About <span>ADIB TECHNOLOGY</span></h2>
 
     <p>
@@ -589,10 +674,12 @@ footer p {
         Our goal is to stay curious, ask questions and discover new ideas.
         Dream Big. Explore More. Discover the Unknown.
     </p>
+
 </section>
 
 <!-- CREATOR PROFILE -->
 <section class="creator">
+
     <h2 class="section-title">Meet the <span>Creator</span></h2>
 
     <div class="creator-card">
@@ -603,11 +690,17 @@ footer p {
             class="creator-image"
         >
 
-        <div class="creator-label">Founder & Creator</div>
+        <div class="creator-label">
+            Founder & Creator
+        </div>
 
-        <h2 class="creator-name">Md Abran Hasan Adib</h2>
+        <h2 class="creator-name">
+            Md Abran Hasan Adib
+        </h2>
 
-        <p class="creator-role">Founder & Creator of ADIB TECHNOLOGY</p>
+        <p class="creator-role">
+            Founder & Creator of ADIB TECHNOLOGY
+        </p>
 
         <div class="creator-bio">
 
@@ -637,11 +730,13 @@ footer p {
         </div>
 
         <div class="creator-tags">
+
             <span>Science</span>
             <span>Space & Universe</span>
             <span>Artificial Intelligence</span>
             <span>Future Inventions</span>
             <span>Space Research</span>
+
         </div>
 
         <p class="creator-quote">
@@ -649,22 +744,31 @@ footer p {
         </p>
 
     </div>
+
 </section>
 
 <!-- FOOTER -->
 <footer>
+
     <p>© 2026 ADIB TECHNOLOGY. All Rights Reserved.</p>
+
     <p>Dream Big. Explore More. Discover the Unknown.</p>
+
 </footer>
 
+<!-- SEARCH SCRIPT -->
 <script>
+
 const searchInput = document.getElementById("articleSearch");
+
 const articleCards = document.querySelectorAll("#articleList .card");
 
 searchInput.addEventListener("input", function () {
+
     const searchText = this.value.toLowerCase();
 
     articleCards.forEach(function (card) {
+
         const cardText = card.innerText.toLowerCase();
 
         if (cardText.includes(searchText)) {
@@ -672,8 +776,11 @@ searchInput.addEventListener("input", function () {
         } else {
             card.style.display = "none";
         }
+
     });
+
 });
+
 </script>
 
 </body>
